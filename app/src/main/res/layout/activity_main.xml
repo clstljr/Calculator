@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Julius Calculator"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/First_value"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="41dp"
+        android:ems="14"
+        android:hint="Enter first value"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/Title"
+        app:layout_constraintStart_toStartOf="@+id/Title"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <EditText
+        android:id="@+id/Second_value"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="41dp"
+        android:ems="14"
+        android:hint="Enter second value"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/First_value"
+        app:layout_constraintStart_toStartOf="@+id/First_value"
+        app:layout_constraintTop_toBottomOf="@+id/First_value" />
+
+    <Button
+        android:id="@+id/Addition_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="41dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Answer" />
+
+    <Button
+        android:id="@+id/Subtraction_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="84dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Answer" />
+
+    <Button
+        android:id="@+id/Multiplication_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="41dp"
+        android:text="x"
+        app:layout_constraintEnd_toEndOf="@+id/Addition_button"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Addition_button"
+        app:layout_constraintTop_toBottomOf="@+id/Addition_button" />
+
+    <Button
+        android:id="@+id/Division_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="84dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="@+id/Subtraction_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Subtraction_button"
+        app:layout_constraintTop_toBottomOf="@+id/Subtraction_button" />
+
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Answer"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/Second_value"
+        app:layout_constraintStart_toStartOf="@+id/Second_value"
+        app:layout_constraintTop_toBottomOf="@+id/Second_value" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
